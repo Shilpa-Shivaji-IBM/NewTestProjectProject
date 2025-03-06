@@ -16,3 +16,7 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2038
+- serviceName: project.newtestproject.integrations:flow2
+  packages:
+  - name: NewTestProjectProject
+    version: "1.0"
