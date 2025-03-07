@@ -7,11 +7,42 @@ packages:
   gitUrl: https://github.com/Shilpa-Shivaji-IBM
   gitUsername: Shilpa-Shivaji-IBM
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
 services:
+- serviceName: project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+  packages:
+  - name: NewTestProjectProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_2
+  packages:
+  - name: NewTestProjectProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_3
+  packages:
+  - name: NewTestProjectProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.newtestproject.integrations:flow1
   packages:
   - name: NewTestProjectProject
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.date:getCurrentDate
   packages:
   - name: WmPublic
@@ -20,3 +51,154 @@ services:
   packages:
   - name: NewTestProjectProject
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.newtestproject.integrations:flowMoaa
+  packages:
+  - name: NewTestProjectProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+configurationVariables:
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.databaseName
+  : ""
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
+  : ssss
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
+  : ""
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.password
+  : "{AES}aLZqGGNedYRdf0xY47LtDQ=="
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.databaseName
+  : ""
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.trustStore
+  : ""
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : sss
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionEnabled
+  : "false"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.trustStore
+  : ""
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.keyStore
+  : ""
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.password
+  : "{AES}aLZqGGNedYRdf0xY47LtDQ=="
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.dbType
+  : ORACLE
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.keyStore
+  : ""
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.user
+  : dddd
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.serverName
+  : sss
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}aLZqGGNedYRdf0xY47LtDQ=="
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.user
+  : ssss
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.serverName
+  : dd
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : ORACLE
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.dbType
+  : ORACLE
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : ""
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.NewTestProjectProject.project.newtestproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionEnabled
+  : "false"
